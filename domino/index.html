@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="theme-color" content="#120b08">
-<title>Ø¯Û†Ù…ÛŒÙ†Û† Pro | ÛŒØ§Ø±ÛŒ Ú©ÙˆØ±Ø¯ÛŒ</title>
+<title>&#x62F;&#x6C6;&#x645;&#x6CC;&#x646;&#x6C6; Pro | &#x6CC;&#x627;&#x631;&#x6CC; &#x6A9;&#x648;&#x631;&#x62F;&#x6CC;</title>
 <style>
 :root{--bg:#120b08;--panel:#24150e;--panel2:#2d1b12;--gold:#e3a33c;--gold2:#ffd77a;--muted:#aa9684;--green:#173b29;--green2:#0f2a1d;--line:#694622;--danger:#e8897d;--white:#fff9ed}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;min-height:100%;background:var(--bg);color:#fff;font-family:Tahoma,Arial,sans-serif}body{min-height:100vh;background:radial-gradient(circle at 50% -10%,#422719 0,#21130d 35%,#100906 75%);overflow-x:hidden}button{font:inherit}
@@ -27,49 +27,49 @@
 <body>
 <div class="app">
   <header class="top">
-    <button class="iconbtn" onclick="goHome()" aria-label="Ú¯Û•Ú•Ø§Ù†Û•ÙˆÛ•">â€¹</button>
-    <div class="title"><h1>ðŸ€„ Ø¯Û†Ù…ÛŒÙ†Û† Pro</h1><p>ÛŒØ§Ø±ÛŒ Ú©ÙˆØ±Ø¯ÛŒ</p></div>
-    <div class="coin">ðŸª™ <span id="coins">0</span></div>
+    <button class="iconbtn" onclick="goHome()" aria-label="&#x6AF;&#x6D5;&#x695;&#x627;&#x646;&#x6D5;&#x648;&#x6D5;">&#x2039;</button>
+    <div class="title"><h1>&#x1F004; &#x62F;&#x6C6;&#x645;&#x6CC;&#x646;&#x6C6; Pro</h1><p>&#x6CC;&#x627;&#x631;&#x6CC; &#x6A9;&#x648;&#x631;&#x62F;&#x6CC;</p></div>
+    <div class="coin">&#x1FA99; <span id="coins">0</span></div>
   </header>
 
   <div class="stats">
-    <div class="stat"><div class="l">Ø¨Ø±Ø¯Ù†</div><div id="winsTop" class="v">0</div></div>
-    <div class="stat"><div class="l">Streak</div><div id="streakTop" class="v">0 ðŸ”¥</div></div>
-    <div class="stat"><div class="l">Ø¨Ø§Ø®ØªÙ†</div><div id="lossesTop" class="v">0</div></div>
+    <div class="stat"><div class="l">&#x628;&#x631;&#x62F;&#x646;</div><div id="winsTop" class="v">0</div></div>
+    <div class="stat"><div class="l">Streak</div><div id="streakTop" class="v">0 &#x1F525;</div></div>
+    <div class="stat"><div class="l">&#x628;&#x627;&#x62E;&#x62A;&#x646;</div><div id="lossesTop" class="v">0</div></div>
   </div>
 
-  <div id="turn" class="turn">Ù†Û†Ø±Û•ÛŒ ØªÛ†ÛŒÛ• ðŸŽ¯</div>
+  <div id="turn" class="turn">&#x646;&#x6C6;&#x631;&#x6D5;&#x6CC; &#x62A;&#x6C6;&#x6CC;&#x6D5; &#x1F3AF;</div>
 
   <div class="players">
-    <div id="pCard" class="player active"><div class="name">ðŸ‘¤ ØªÛ†</div><div id="pScore" class="score">0</div><div class="mini">Ø®Ø§ÚµÛŒ Ù¾Ø§Ø±Ú†Û•Ú©Ø§Ù†</div></div>
-    <div id="aCard" class="player"><div class="name">ðŸ¤– AI</div><div id="aScore" class="score">0</div><div class="mini">Ø®Ø§ÚµÛŒ Ù¾Ø§Ø±Ú†Û•Ú©Ø§Ù†</div></div>
+    <div id="pCard" class="player active"><div class="name">&#x1F464; &#x62A;&#x6C6;</div><div id="pScore" class="score">0</div><div class="mini">&#x62E;&#x627;&#x6B5;&#x6CC; &#x67E;&#x627;&#x631;&#x686;&#x6D5;&#x6A9;&#x627;&#x646;</div></div>
+    <div id="aCard" class="player"><div class="name">&#x1F916; AI</div><div id="aScore" class="score">0</div><div class="mini">&#x62E;&#x627;&#x6B5;&#x6CC; &#x67E;&#x627;&#x631;&#x686;&#x6D5;&#x6A9;&#x627;&#x646;</div></div>
   </div>
 
-  <div id="aiHand" class="aihand" aria-label="Ù¾Ø§Ø±Ú†Û•Ú©Ø§Ù†ÛŒ AI"></div>
+  <div id="aiHand" class="aihand" aria-label="&#x67E;&#x627;&#x631;&#x686;&#x6D5;&#x6A9;&#x627;&#x646;&#x6CC; AI"></div>
 
   <section class="table">
-    <div id="empty" class="empty">ÛŒÛ•Ú©Û•Ù… Ù¾Ø§Ø±Ú†Û• Ø¯Ø§Ø¨Ù†ÛŽ<br>Ø¯ÙˆØ§ØªØ± ÛŒØ§Ø±ÛŒ Ø¯Û•Ø³ØªÛŒ Ù¾ÛŽØ¯Û•Ú©Ø§Øª ðŸ€„</div>
+    <div id="empty" class="empty">&#x6CC;&#x6D5;&#x6A9;&#x6D5;&#x645; &#x67E;&#x627;&#x631;&#x686;&#x6D5; &#x62F;&#x627;&#x628;&#x646;&#x6CE;<br>&#x62F;&#x648;&#x627;&#x62A;&#x631; &#x6CC;&#x627;&#x631;&#x6CC; &#x62F;&#x6D5;&#x633;&#x62A;&#x6CC; &#x67E;&#x6CE;&#x62F;&#x6D5;&#x6A9;&#x627;&#x62A; &#x1F004;</div>
     <div id="board" class="board"></div>
   </section>
 
-  <div class="handtitle">Ù¾Ø§Ø±Ú†Û•Ú©Ø§Ù†ÛŒ ØªÛ† â€” <span id="count">7</span></div>
+  <div class="handtitle">&#x67E;&#x627;&#x631;&#x686;&#x6D5;&#x6A9;&#x627;&#x646;&#x6CC; &#x62A;&#x6C6; &#x2014; <span id="count">7</span></div>
   <div id="hand" class="hand"></div>
-  <div id="hint" class="hint">Ù¾Ø§Ø±Ú†Û•ÛŒ Ø²Û•Ø±Ø¯Ú©Ø±Ø§Ùˆ Ø¯Û•ØªÙˆØ§Ù†ÛŒØª Ø¯Ø§Ø¨Ù†ÛŽÛŒØª.</div>
+  <div id="hint" class="hint">&#x67E;&#x627;&#x631;&#x686;&#x6D5;&#x6CC; &#x632;&#x6D5;&#x631;&#x62F;&#x6A9;&#x631;&#x627;&#x648; &#x62F;&#x6D5;&#x62A;&#x648;&#x627;&#x646;&#x6CC;&#x62A; &#x62F;&#x627;&#x628;&#x646;&#x6CE;&#x6CC;&#x62A;.</div>
 
   <div class="controls">
-    <button id="draw" class="btn primary" onclick="drawPlayer()">ðŸŽ´ Ú©ÛŽØ´Ø§Ù†</button>
-    <button class="btn" onclick="newGame()">ðŸ”„ ÛŒØ§Ø±ÛŒÛŒ Ù†ÙˆÛŽ</button>
-    <button class="btn" onclick="goHome()">ðŸ  Ø³Û•Ø±Û•Ú©ÛŒ</button>
+    <button id="draw" class="btn primary" onclick="drawPlayer()">&#x1F3B4; &#x6A9;&#x6CE;&#x634;&#x627;&#x646;</button>
+    <button class="btn" onclick="newGame()">&#x1F504; &#x6CC;&#x627;&#x631;&#x6CC;&#x6CC; &#x646;&#x648;&#x6CE;</button>
+    <button class="btn" onclick="goHome()">&#x1F3E0; &#x633;&#x6D5;&#x631;&#x6D5;&#x6A9;&#x6CC;</button>
   </div>
 
   <div class="stats">
-    <div class="stat"><div class="l">Ù¾Ø§Ø±Ú†Û•ÛŒ Ù…Ø§ÙˆÛ•</div><div id="stock" class="v">14</div></div>
+    <div class="stat"><div class="l">&#x67E;&#x627;&#x631;&#x686;&#x6D5;&#x6CC; &#x645;&#x627;&#x648;&#x6D5;</div><div id="stock" class="v">14</div></div>
     <div class="stat"><div class="l">Coin</div><div id="coinsBottom" class="v">0</div></div>
-    <div class="stat"><div class="l">Streak</div><div id="streakBottom" class="v">0 ðŸ”¥</div></div>
+    <div class="stat"><div class="l">Streak</div><div id="streakBottom" class="v">0 &#x1F525;</div></div>
   </div>
 </div>
 
-<div id="overlay" class="overlay"><div class="modal"><div id="icon" class="resulticon">ðŸ†</div><h2 id="resultTitle">Ù¾ÛŒØ±Û†Ø²Û•!</h2><p id="resultText"></p><div id="reward" class="reward"></div><button class="btn primary" onclick="newGame()">ðŸ”„ ÛŒØ§Ø±ÛŒÛŒÛ•Ú©ÛŒ ØªØ±</button><button class="btn" onclick="goHome()">ðŸ  Ø³Û•Ø±Û•Ú©ÛŒ</button></div></div>
+<div id="overlay" class="overlay"><div class="modal"><div id="icon" class="resulticon">&#x1F3C6;</div><h2 id="resultTitle">&#x67E;&#x6CC;&#x631;&#x6C6;&#x632;&#x6D5;!</h2><p id="resultText"></p><div id="reward" class="reward"></div><button class="btn primary" onclick="newGame()">&#x1F504; &#x6CC;&#x627;&#x631;&#x6CC;&#x6CC;&#x6D5;&#x6A9;&#x6CC; &#x62A;&#x631;</button><button class="btn" onclick="goHome()">&#x1F3E0; &#x633;&#x6D5;&#x631;&#x6D5;&#x6A9;&#x6CC;</button></div></div>
 <div id="toast" class="toast"></div>
 
 <script>
@@ -90,7 +90,7 @@ function vibrate(ms=25){try{navigator.vibrate&&navigator.vibrate(ms)}catch(e){}}
 function newGame(){
   $('overlay').classList.remove('show');ended=false;thinking=false;turn='player';board=[];
   let x=shuffle(makeTiles());player=x.splice(0,7);ai=x.splice(0,7);stock=x;
-  render();beep(420,.07);toast('ÛŒØ§Ø±ÛŒÛŒÛ•Ú©ÛŒ Ù†ÙˆÛŽ Ø¯Û•Ø³ØªÛŒ Ù¾ÛŽÚ©Ø±Ø¯ ðŸŽ®');
+  render();beep(420,.07);toast('\u{6cc}\u{627}\u{631}\u{6cc}\u{6cc}\u{6d5}\u{6a9}\u{6cc} \u{646}\u{648}\u{6ce} \u{62f}\u{6d5}\u{633}\u{62a}\u{6cc} \u{67e}\u{6ce}\u{6a9}\u{631}\u{62f} \u{1f3ae}');
 }
 
 function playable(t){if(!board.length)return true;let l=board[0].a,r=board[board.length-1].b;return t.a===l||t.b===l||t.a===r||t.b===r}
@@ -111,7 +111,7 @@ function place(t){
 function playPlayer(i){
   if(ended||turn!=='player'||thinking)return;
   let t=player[i];if(!t)return;
-  if(!playable(t)){toast('Ø¦Û•Ù… Ù¾Ø§Ø±Ú†Û•ÛŒÛ• Ù†Ø§ØªÙˆØ§Ù†Ø±ÛŽØª Ø¯Ø§Ø¨Ù†Ø±ÛŽØª âŒ');beep(180,.08);return}
+  if(!playable(t)){toast('\u{626}\u{6d5}\u{645} \u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6cc}\u{6d5} \u{646}\u{627}\u{62a}\u{648}\u{627}\u{646}\u{631}\u{6ce}\u{62a} \u{62f}\u{627}\u{628}\u{646}\u{631}\u{6ce}\u{62a} \u{274c}');beep(180,.08);return}
   place(t);player.splice(i,1);beep(620,.08);vibrate(25);render();
   if(!player.length){finish('player');return}
   turn='ai';render();setTimeout(aiTurn,650);
@@ -119,12 +119,12 @@ function playPlayer(i){
 
 function drawPlayer(){
   if(ended||turn!=='player'||thinking)return;
-  if(playableList(player).length&&board.length){toast('Ù¾Ø§Ø±Ú†Û•ÛŒ ÛŒØ§Ø±ÛŒâ€ŒÚ©Ø±Ø§ÙˆØª Ù‡Û•ÛŒÛ• ðŸ€„');return}
+  if(playableList(player).length&&board.length){toast('\u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6cc} \u{6cc}\u{627}\u{631}\u{6cc}\u{200c}\u{6a9}\u{631}\u{627}\u{648}\u{62a} \u{647}\u{6d5}\u{6cc}\u{6d5} \u{1f004}');return}
   if(!stock.length){passPlayer();return}
   let t=stock.shift();player.push(t);beep(340,.06);vibrate(18);render();
-  if(playable(t))toast('Ø¦Û•Ù… Ù¾Ø§Ø±Ú†Û•ÛŒÛ• Ø¯Û•ØªÙˆØ§Ù†ÛŒØª ÛŒØ§Ø±ÛŒ Ù¾ÛŽ Ø¨Ú©Û•ÛŒØª âœ…');
+  if(playable(t))toast('\u{626}\u{6d5}\u{645} \u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6cc}\u{6d5} \u{62f}\u{6d5}\u{62a}\u{648}\u{627}\u{646}\u{6cc}\u{62a} \u{6cc}\u{627}\u{631}\u{6cc} \u{67e}\u{6ce} \u{628}\u{6a9}\u{6d5}\u{6cc}\u{62a} \u{2705}');
   else if(!stock.length&&!playableList(player).length)setTimeout(passPlayer,450);
-  else toast('Ù¾Ø§Ø±Ú†Û•ÛŒÛ•Ú©Øª Ú©ÛŽØ´Ø§ ðŸŽ´');
+  else toast('\u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6cc}\u{6d5}\u{6a9}\u{62a} \u{6a9}\u{6ce}\u{634}\u{627} \u{1f3b4}');
 }
 
 function passPlayer(){if(ended||turn!=='player')return;if(playableList(player).length||stock.length)return;turn='ai';render();setTimeout(aiTurn,500)}
@@ -134,7 +134,7 @@ function aiTurn(){
   setTimeout(()=>{
     let p=playableList(ai);
     while(!p.length&&stock.length){ai.push(stock.shift());p=playableList(ai)}
-    if(!p.length){thinking=false;turn='player';render();if(!stock.length)checkBlocked();else toast('AI Ù¾Ø§Ø±Ú†Û•ÛŒ Ú¯ÙˆÙ†Ø¬Ø§ÙˆÛŒ Ù†ÛŒÛŒÛ•');return}
+    if(!p.length){thinking=false;turn='player';render();if(!stock.length)checkBlocked();else toast('AI \u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6cc} \u{6af}\u{648}\u{646}\u{62c}\u{627}\u{648}\u{6cc} \u{646}\u{6cc}\u{6cc}\u{6d5}');return}
     p.sort((a,b)=>{let ad=(a.a===a.b?4:0)+a.a+a.b,bd=(b.a===b.b?4:0)+b.a+b.b;return bd-ad});
     let t=p[0],i=ai.findIndex(x=>x.id===t.id);place(ai[i]);ai.splice(i,1);thinking=false;beep(520,.07);render();
     if(!ai.length){finish('ai');return}
@@ -149,13 +149,13 @@ function finish(w,blocked=false){
   if(w==='player'){
     wins++;streak++;reward=blocked?30:50;coins+=reward;
     localStorage.setItem('yk_domino_wins',wins);localStorage.setItem('yk_coins',coins);localStorage.setItem('yk_domino_streak',streak);
-    $('icon').textContent='ðŸ†';$('resultTitle').textContent='Ù¾ÛŒØ±Û†Ø²Û•! ØªÛ† Ø¨Ø±Ø¯ØªÛ•ÙˆÛ• ðŸŽ‰';$('resultText').textContent=blocked?'Ø¨Û• Ø®Ø§ÚµÛŒ Ú©Û•Ù…ØªØ± Ø¨Ø±Ø¯ØªÛ•ÙˆÛ•.':'Ù‡Û•Ù…ÙˆÙˆ Ù¾Ø§Ø±Ú†Û•Ú©Ø§Ù†Øª ØªÛ•ÙˆØ§Ùˆ Ú©Ø±Ø¯.';$('reward').textContent=`ðŸª™ +${reward} Coin â€¢ ðŸ”¥ Streak ${streak}`;beep(760,.14);vibrate(80);confetti();
+    $('icon').textContent='\u{1f3c6}';$('resultTitle').textContent='\u{67e}\u{6cc}\u{631}\u{6c6}\u{632}\u{6d5}! \u{62a}\u{6c6} \u{628}\u{631}\u{62f}\u{62a}\u{6d5}\u{648}\u{6d5} \u{1f389}';$('resultText').textContent=blocked?'\u{628}\u{6d5} \u{62e}\u{627}\u{6b5}\u{6cc} \u{6a9}\u{6d5}\u{645}\u{62a}\u{631} \u{628}\u{631}\u{62f}\u{62a}\u{6d5}\u{648}\u{6d5}.':'\u{647}\u{6d5}\u{645}\u{648}\u{648} \u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6a9}\u{627}\u{646}\u{62a} \u{62a}\u{6d5}\u{648}\u{627}\u{648} \u{6a9}\u{631}\u{62f}.';$('reward').textContent=`\u{1fa99} +${reward} Coin \u{2022} \u{1f525} Streak ${streak}`;beep(760,.14);vibrate(80);confetti();
   }else if(w==='ai'){
     losses++;streak=0;localStorage.setItem('yk_domino_losses',losses);localStorage.setItem('yk_domino_streak',streak);
-    $('icon').textContent='ðŸ¤–';$('resultTitle').textContent='AI Ø¨Ø±Ø¯ÛŒ';$('resultText').textContent=blocked?'AI Ø®Ø§ÚµÛŒ Ú©Û•Ù…ØªØ± Ø¨ÙˆÙˆ.':'AI Ù‡Û•Ù…ÙˆÙˆ Ù¾Ø§Ø±Ú†Û•Ú©Ø§Ù†ÛŒ ØªÛ•ÙˆØ§Ùˆ Ú©Ø±Ø¯.';$('reward').textContent='ðŸª™ +0 Coin';beep(220,.14);
+    $('icon').textContent='\u{1f916}';$('resultTitle').textContent='AI \u{628}\u{631}\u{62f}\u{6cc}';$('resultText').textContent=blocked?'AI \u{62e}\u{627}\u{6b5}\u{6cc} \u{6a9}\u{6d5}\u{645}\u{62a}\u{631} \u{628}\u{648}\u{648}.':'AI \u{647}\u{6d5}\u{645}\u{648}\u{648} \u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6a9}\u{627}\u{646}\u{6cc} \u{62a}\u{6d5}\u{648}\u{627}\u{648} \u{6a9}\u{631}\u{62f}.';$('reward').textContent='\u{1fa99} +0 Coin';beep(220,.14);
   }else{
     coins+=10;streak=0;localStorage.setItem('yk_coins',coins);localStorage.setItem('yk_domino_streak',streak);
-    $('icon').textContent='ðŸ¤';$('resultTitle').textContent='ÛŒÛ•Ú©Ø³Ø§Ù† Ø¨ÙˆÙˆ';$('resultText').textContent='Ø®Ø§ÚµÛ•Ú©Ø§Ù† ÛŒÛ•Ú©Ø³Ø§Ù† Ø¨ÙˆÙˆÙ†.';$('reward').textContent='ðŸª™ +10 Coin';beep(420,.1);
+    $('icon').textContent='\u{1f91d}';$('resultTitle').textContent='\u{6cc}\u{6d5}\u{6a9}\u{633}\u{627}\u{646} \u{628}\u{648}\u{648}';$('resultText').textContent='\u{62e}\u{627}\u{6b5}\u{6d5}\u{6a9}\u{627}\u{646} \u{6cc}\u{6d5}\u{6a9}\u{633}\u{627}\u{646} \u{628}\u{648}\u{648}\u{646}.';$('reward').textContent='\u{1fa99} +10 Coin';beep(420,.1);
   }
   updateStorage();setTimeout(()=>$('overlay').classList.add('show'),350);
 }
@@ -169,16 +169,16 @@ function renderHand(){let h=$('hand');h.innerHTML='';player.forEach((t,i)=>{let 
 function renderAI(){let h=$('aiHand');h.innerHTML='';for(let i=0;i<ai.length;i++){let e=document.createElement('div');e.className='backtile';e.style.animationDelay=(i*35)+'ms';h.appendChild(e)}}
 
 function update(){
-  $('turn').textContent=ended?'ÛŒØ§Ø±ÛŒ Ú©Û†ØªØ§ÛŒÛŒ Ù‡Ø§Øª ðŸ':thinking?'AI Ø¨ÛŒØ± Ø¯Û•Ú©Ø§ØªÛ•ÙˆÛ•... ðŸ¤–':turn==='player'?'Ù†Û†Ø±Û•ÛŒ ØªÛ†ÛŒÛ• ðŸŽ¯':'Ù†Û†Ø±Û•ÛŒ AI Ù€Û• ðŸ¤–';
+  $('turn').textContent=ended?'\u{6cc}\u{627}\u{631}\u{6cc} \u{6a9}\u{6c6}\u{62a}\u{627}\u{6cc}\u{6cc} \u{647}\u{627}\u{62a} \u{1f3c1}':thinking?'AI \u{628}\u{6cc}\u{631} \u{62f}\u{6d5}\u{6a9}\u{627}\u{62a}\u{6d5}\u{648}\u{6d5}... \u{1f916}':turn==='player'?'\u{646}\u{6c6}\u{631}\u{6d5}\u{6cc} \u{62a}\u{6c6}\u{6cc}\u{6d5} \u{1f3af}':'\u{646}\u{6c6}\u{631}\u{6d5}\u{6cc} AI \u{640}\u{6d5} \u{1f916}';
   $('turn').className='turn '+(ended?'end':turn==='ai'?'ai':'')+(thinking?' thinking':'');
   $('pCard').classList.toggle('active',turn==='player'&&!ended);$('aCard').classList.toggle('active',turn==='ai'&&!ended);
   $('pScore').textContent=pips(player);$('aScore').textContent=pips(ai);$('stock').textContent=stock.length;
   $('draw').disabled=!(turn==='player'&&!ended&&!thinking&&(!board.length||!playableList(player).length)&&stock.length);
-  $('hint').textContent=turn==='player'&&!ended?(playableList(player).length?'Ù¾Ø§Ø±Ú†Û•ÛŒ Ø²Û•Ø±Ø¯Ú©Ø±Ø§Ùˆ Ø¯Û•ØªÙˆØ§Ù†ÛŒØª Ø¯Ø§Ø¨Ù†ÛŽÛŒØª.':'Ù‡ÛŒÚ† Ù¾Ø§Ø±Ú†Û•ÛŒÛ•Ú©ÛŒ Ú¯ÙˆÙ†Ø¬Ø§Ùˆ Ù†ÛŒÛŒÛ•Ø› Ú©ÛŽØ´Ø§Ù† Ø¨Ú©Û• ðŸŽ´'):'Ú†Ø§ÙˆÛ•Ú•ÛŽÛŒ Ù†Û†Ø±Û•Ú©Û• Ø¨Ú©Û•...';
+  $('hint').textContent=turn==='player'&&!ended?(playableList(player).length?'\u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6cc} \u{632}\u{6d5}\u{631}\u{62f}\u{6a9}\u{631}\u{627}\u{648} \u{62f}\u{6d5}\u{62a}\u{648}\u{627}\u{646}\u{6cc}\u{62a} \u{62f}\u{627}\u{628}\u{646}\u{6ce}\u{6cc}\u{62a}.':'\u{647}\u{6cc}\u{686} \u{67e}\u{627}\u{631}\u{686}\u{6d5}\u{6cc}\u{6d5}\u{6a9}\u{6cc} \u{6af}\u{648}\u{646}\u{62c}\u{627}\u{648} \u{646}\u{6cc}\u{6cc}\u{6d5}\u{61b} \u{6a9}\u{6ce}\u{634}\u{627}\u{646} \u{628}\u{6a9}\u{6d5} \u{1f3b4}'):'\u{686}\u{627}\u{648}\u{6d5}\u{695}\u{6ce}\u{6cc} \u{646}\u{6c6}\u{631}\u{6d5}\u{6a9}\u{6d5} \u{628}\u{6a9}\u{6d5}...';
   updateStorage();
 }
 function updateStorage(){
-  $('coins').textContent=coins;$('coinsBottom').textContent=coins;$('winsTop').textContent=wins;$('lossesTop').textContent=losses;$('streakTop').textContent=streak+' ðŸ”¥';$('streakBottom').textContent=streak+' ðŸ”¥';
+  $('coins').textContent=coins;$('coinsBottom').textContent=coins;$('winsTop').textContent=wins;$('lossesTop').textContent=losses;$('streakTop').textContent=streak+' \u{1f525}';$('streakBottom').textContent=streak+' \u{1f525}';
 }
 function toast(m){let t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),1700)}
 function confetti(){for(let i=0;i<22;i++){let s=document.createElement('i');s.className='spark';s.style.left=(45+Math.random()*10)+'%';s.style.top='42%';s.style.setProperty('--x',((Math.random()-.5)*280)+'px');s.style.setProperty('--y',(120+Math.random()*300)+'px');s.style.transform='rotate('+Math.random()*180+'deg)';document.body.appendChild(s);setTimeout(()=>s.remove(),950)}}
